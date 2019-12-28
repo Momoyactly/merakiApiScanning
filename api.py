@@ -14,4 +14,4 @@ def post():
     print(request.data)
     return request.data
 
-app.run()
+app.run(port=8000,debug=True)

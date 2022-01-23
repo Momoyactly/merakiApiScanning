@@ -10,6 +10,12 @@ class BasicTests(unittest.TestCase):
     def test_get(self):
         response = self.app.get('/', follow_redirects=True)
         self.assertEqual(response.status_code, 200)
+        self.assertIn(b'a30ee592b51f2f382a1e9d2dd0baed8920e8d51a', response.data)
+    
+    def test_post(self):
+        response = self.app.post('/', follow_redirects=True)
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b'a30ee592b51f2f382a1e9d2dd0baed8920e8d51a', response.data)
 
     # executed after each test
     def tearDown(self):

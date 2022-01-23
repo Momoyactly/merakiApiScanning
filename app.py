@@ -14,4 +14,6 @@ def post():
     print(request.data)
     return "a30ee592b51f2f382a1e9d2dd0baed8920e8d51a"
 
-app.run(port=1050,debug=True,ssl_context=('cert.pem', 'key.pem'))
+if __name__ == "__main__":
+    app.run(debug=True,ssl_context=('cert.pem', 'key.pem'))
+

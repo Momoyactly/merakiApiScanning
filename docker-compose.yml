@@ -28,5 +28,15 @@ services:
               - flask-app
         ports:
             - 8080:5000
+    postgres:
+      restart: always
+      image: postgres
+      container_name: postgres
+      environment:
+        POSTGRES_USER: root
+        POSTGRES_PASSWORD: root
+        POSTGRES_DB: test_db
+      ports:
+        - "5432:5432"
 networks:
   my-network:

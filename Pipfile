@@ -15,6 +15,9 @@ Jinja2 = "==3.0.3"
 MarkupSafe = "==2.0.1"
 urllib3 = "==1.26.8"
 Werkzeug = "==2.0.2"
+sqlalchemy = "*"
+psycopg2-binary = "*"
+psycopg2 = "*"
 
 [dev-packages]
 

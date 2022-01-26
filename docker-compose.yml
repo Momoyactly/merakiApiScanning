@@ -1,42 +1,78 @@
 version: '3.1'
 services:
     nginx:
-        image: nginx:1.13.7
-        container_name: nginx
-        volumes:
-          - ./default.conf:/etc/nginx/conf.d/default.conf
-        networks:
-          my-network:
-            aliases:
-              - ngnix-app
-        ports:
-            - 80:80
+      image: nginx
+      container_name: nginx
+      volumes:
+        - ./ngnix/default.conf:/etc/nginx/conf.d/default.conf
+      networks:
+        internal:
+          aliases:
+            - ngnix-app
+      ports:
+          - 80:80
+      depends_on:
+        flask:
+          condition: service_healthy
     flask:
-        build:
-            context: ./
-            dockerfile: Dockerfile
-        image: flask:0.0.1
-        container_name: flask
-        volumes:
-            - ./:/code/
-        environment:
-            - FLASK_APP=/code/app.py
-        command: flask run --host=0.0.0.0
-        networks:
-          my-network:
-            aliases:
-              - flask-app
-        ports:
-            - 8080:5000
+      build:
+          context: ./flask/
+          dockerfile: Dockerfile
+      image: flask
+      container_name: flask
+      depends_on:
+        postgres:
+          condition: service_healthy
+      healthcheck:
+        test: ["CMD-SHELL", "curl localhost:5000"]
+        interval: 5s
+        timeout: 5s
+        retries: 5
+      volumes:
+          - ./flask/:/code/
+      env_file:
+      - ./variables.env
+      environment:
+          FLASK_APP: /code/app.py
+      command: flask run --host=0.0.0.0
+      networks:
+        internal:
+          aliases:
+            - flask-app
+      ports:
+          - 8080:5000
     postgres:
       restart: always
       image: postgres
       container_name: postgres
-      environment:
-        POSTGRES_USER: root
-        POSTGRES_PASSWORD: root
-        POSTGRES_DB: test_db
+      env_file:
+      - ./variables.env
+      networks:
+          internal:
+            aliases:
+              - postgres-app
       ports:
         - "5432:5432"
+      volumes:
+      - pg_data:/var/lib/postgresql/data/
+      healthcheck:
+        test: ["CMD-SHELL", "pg_isready -U flask -d scanning_api"]
+        interval: 5s
+        timeout: 5s
+        retries: 5
+    grafana:
+      image: grafana/grafana-oss
+      container_name: grafana
+      ports:
+        - 3000:3000
+      user: '104'
+      networks:
+          internal:
+            aliases:
+              - grafana-app
 networks:
-  my-network:
+  internal:
+    name: internal
+volumes:
+  pg_data:
+    name: pg_data

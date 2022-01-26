@@ -1,0 +1,516 @@
+{
+    "version": "2.0",
+    "secret": "Momoyactly",
+    "type": "DevicesSeen",
+    "data": {
+        "apMac": "e0:cb:bc:96:23:c0",
+        "apFloors": [],
+        "apTags": [],
+        "observations": [
+            {
+                "ipv4": null,
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 49.0,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:58:57Z",
+                "ssid": null,
+                "os": null,
+                "clientMac": "70:89:76:2f:fa:84",
+                "seenEpoch": 1643090337,
+                "rssi": 7,
+                "ipv6": null,
+                "manufacturer": "Tuya Smart"
+            },
+            {
+                "ipv4": null,
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 49.0,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:58:21Z",
+                "ssid": null,
+                "os": null,
+                "clientMac": "94:e6:f7:a0:5b:81",
+                "seenEpoch": 1643090301,
+                "rssi": 8,
+                "ipv6": null,
+                "manufacturer": "Intel"
+            },
+            {
+                "ipv4": null,
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 49.0,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:59:00Z",
+                "ssid": null,
+                "os": null,
+                "clientMac": "cc:50:e3:e2:18:3e",
+                "seenEpoch": 1643090340,
+                "rssi": 10,
+                "ipv6": null,
+                "manufacturer": "Espressif"
+            },
+            {
+                "ipv4": null,
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 49.0,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:58:07Z",
+                "ssid": null,
+                "os": null,
+                "clientMac": "08:84:9d:d5:b1:a3",
+                "seenEpoch": 1643090287,
+                "rssi": 8,
+                "ipv6": null,
+                "manufacturer": "Amazon Technologies"
+            },
+            {
+                "ipv4": null,
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 49.0,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:57:56Z",
+                "ssid": null,
+                "os": null,
+                "clientMac": "40:f0:2f:24:f4:db",
+                "seenEpoch": 1643090276,
+                "rssi": 11,
+                "ipv6": null,
+                "manufacturer": "Lite-On"
+            },
+            {
+                "ipv4": "/192.168.20.47",
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 4.315840054487339,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:59:01Z",
+                "ssid": "Interno",
+                "os": null,
+                "clientMac": "38:8b:59:48:21:ad",
+                "seenEpoch": 1643090341,
+                "rssi": 39,
+                "ipv6": null,
+                "manufacturer": "Google"
+            },
+            {
+                "ipv4": null,
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 49.0,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:58:54Z",
+                "ssid": null,
+                "os": null,
+                "clientMac": "a8:6b:ad:9f:d1:52",
+                "seenEpoch": 1643090334,
+                "rssi": 17,
+                "ipv6": null,
+                "manufacturer": "Hon Hai/Foxconn"
+            },
+            {
+                "ipv4": null,
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 49.0,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:58:49Z",
+                "ssid": null,
+                "os": null,
+                "clientMac": "7c:2e:bd:0b:b2:bf",
+                "seenEpoch": 1643090329,
+                "rssi": 6,
+                "ipv6": null,
+                "manufacturer": "Google"
+            },
+            {
+                "ipv4": "/192.168.30.15",
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 5.53718654663523,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:59:01Z",
+                "ssid": "work",
+                "os": null,
+                "clientMac": "c8:b2:9b:48:8e:6f",
+                "seenEpoch": 1643090341,
+                "rssi": 36,
+                "ipv6": null,
+                "manufacturer": "Intel"
+            },
+            {
+                "ipv4": null,
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 49.0,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:58:37Z",
+                "ssid": null,
+                "os": null,
+                "clientMac": "48:a6:b8:33:47:78",
+                "seenEpoch": 1643090317,
+                "rssi": 11,
+                "ipv6": null,
+                "manufacturer": "Sonos"
+            },
+            {
+                "ipv4": null,
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 13.091914656322269,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:57:53Z",
+                "ssid": null,
+                "os": null,
+                "clientMac": "00:95:69:e7:9b:4c",
+                "seenEpoch": 1643090273,
+                "rssi": 31,
+                "ipv6": null,
+                "manufacturer": "LSD Science and..."
+            },
+            {
+                "ipv4": "/192.168.20.51",
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 13.091914656322269,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:58:33Z",
+                "ssid": "Interno",
+                "os": "Nokia",
+                "clientMac": "5c:52:1e:9d:43:5d",
+                "seenEpoch": 1643090313,
+                "rssi": 31,
+                "ipv6": null,
+                "manufacturer": "Nintendo"
+            },
+            {
+                "ipv4": null,
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 43.562546906687274,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:59:01Z",
+                "ssid": null,
+                "os": null,
+                "clientMac": "48:a6:b8:33:47:77",
+                "seenEpoch": 1643090341,
+                "rssi": 21,
+                "ipv6": null,
+                "manufacturer": "Sonos"
+            },
+            {
+                "ipv4": "/192.168.20.4",
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 49.0,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:58:57Z",
+                "ssid": "Interno",
+                "os": "PlayStation 2",
+                "clientMac": "5c:96:56:69:39:2d",
+                "seenEpoch": 1643090337,
+                "rssi": 15,
+                "ipv6": null,
+                "manufacturer": "AzureWave Technology"
+            },
+            {
+                "ipv4": null,
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 49.0,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:58:14Z",
+                "ssid": null,
+                "os": null,
+                "clientMac": "ac:ae:19:54:6c:ba",
+                "seenEpoch": 1643090294,
+                "rssi": 18,
+                "ipv6": null,
+                "manufacturer": "Roku"
+            },
+            {
+                "ipv4": null,
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 49.0,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:57:37Z",
+                "ssid": null,
+                "os": null,
+                "clientMac": "7c:d9:5c:0f:b5:dd",
+                "seenEpoch": 1643090257,
+                "rssi": 4,
+                "ipv6": null,
+                "manufacturer": "Google"
+            },
+            {
+                "ipv4": null,
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 49.0,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:58:20Z",
+                "ssid": null,
+                "os": null,
+                "clientMac": "f4:03:2a:d7:d9:68",
+                "seenEpoch": 1643090300,
+                "rssi": 9,
+                "ipv6": null,
+                "manufacturer": "Amazon Technologies"
+            },
+            {
+                "ipv4": null,
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 49.0,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:58:41Z",
+                "ssid": null,
+                "os": null,
+                "clientMac": "08:12:a5:93:e3:b4",
+                "seenEpoch": 1643090321,
+                "rssi": 15,
+                "ipv6": null,
+                "manufacturer": "Amazon Technologies"
+            },
+            {
+                "ipv4": "/192.168.20.39",
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 0.9905358527674868,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:58:23Z",
+                "ssid": "Interno",
+                "os": null,
+                "clientMac": "58:a0:23:80:8e:f5",
+                "seenEpoch": 1643090303,
+                "rssi": 48,
+                "ipv6": null,
+                "manufacturer": "Intel"
+            },
+            {
+                "ipv4": null,
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 49.0,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:58:21Z",
+                "ssid": null,
+                "os": null,
+                "clientMac": "30:19:66:ea:db:c2",
+                "seenEpoch": 1643090301,
+                "rssi": 5,
+                "ipv6": null,
+                "manufacturer": "Samsung"
+            },
+            {
+                "ipv4": null,
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 6.948890900305082,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:58:48Z",
+                "ssid": null,
+                "os": null,
+                "clientMac": "24:f5:a2:1d:d3:2b",
+                "seenEpoch": 1643090328,
+                "rssi": 40,
+                "ipv6": null,
+                "manufacturer": "Belkin"
+            },
+            {
+                "ipv4": null,
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 41.21077547635681,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:58:53Z",
+                "ssid": null,
+                "os": null,
+                "clientMac": "98:da:c4:51:9f:3f",
+                "seenEpoch": 1643090333,
+                "rssi": 22,
+                "ipv6": null,
+                "manufacturer": "TP-LINK Technologies"
+            },
+            {
+                "ipv4": null,
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 49.0,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:58:08Z",
+                "ssid": null,
+                "os": null,
+                "clientMac": "00:bf:af:52:2e:8b",
+                "seenEpoch": 1643090288,
+                "rssi": 5,
+                "ipv6": null,
+                "manufacturer": "Hui Zhou Gaoshengda..."
+            },
+            {
+                "ipv4": null,
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 38.71641173621407,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:58:48Z",
+                "ssid": null,
+                "os": null,
+                "clientMac": "48:a6:b8:33:47:76",
+                "seenEpoch": 1643090328,
+                "rssi": 22,
+                "ipv6": null,
+                "manufacturer": "Sonos"
+            },
+            {
+                "ipv4": "/192.168.20.3",
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 4.610092271509818,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:58:43Z",
+                "ssid": "Interno",
+                "os": null,
+                "clientMac": "d8:0d:17:e7:d2:91",
+                "seenEpoch": 1643090323,
+                "rssi": 39,
+                "ipv6": null,
+                "manufacturer": "TP-LINK Technologies"
+            },
+            {
+                "ipv4": "/192.168.20.42",
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 49.0,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:58:57Z",
+                "ssid": "Interno",
+                "os": null,
+                "clientMac": "5c:c1:d7:a8:3e:f0",
+                "seenEpoch": 1643090337,
+                "rssi": 20,
+                "ipv6": null,
+                "manufacturer": "Samsung"
+            },
+            {
+                "ipv4": null,
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 49.0,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:58:12Z",
+                "ssid": null,
+                "os": null,
+                "clientMac": "90:0c:c8:fe:00:1f",
+                "seenEpoch": 1643090292,
+                "rssi": 6,
+                "ipv6": null,
+                "manufacturer": "Google"
+            },
+            {
+                "ipv4": null,
+                "location": {
+                    "lat": 19.338641073442215,
+                    "lng": -99.14995372295381,
+                    "unc": 49.0,
+                    "x": [],
+                    "y": []
+                },
+                "seenTime": "2022-01-25T05:59:01Z",
+                "ssid": null,
+                "os": null,
+                "clientMac": "90:a8:22:86:d8:f0",
+                "seenEpoch": 1643090341,
+                "rssi": 16,
+                "ipv6": null,
+                "manufacturer": "Amazon Technologies"
+            }
+        ]
+    }
+}

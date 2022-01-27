@@ -18,6 +18,7 @@ Werkzeug = "==2.0.2"
 sqlalchemy = "*"
 psycopg2-binary = "*"
 psycopg2 = "*"
+gunicorn = "*"
 
 [dev-packages]
 

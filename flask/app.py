@@ -10,7 +10,7 @@ db   = os.environ['POSTGRES_DB']
 host   = os.environ['POSTGRES_HOST']
 app = Flask(__name__)
 app.config["DEBUG"] = True
-#createDB(user,password,db,host)
+createDB(user,password,db,host)
 @app.route('/', methods=['GET'])
 def get():
     return "a30ee592b51f2f382a1e9d2dd0baed8920e8d51a"

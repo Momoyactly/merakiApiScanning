@@ -5,12 +5,14 @@ services:
       container_name: nginx
       volumes:
         - ./ngnix/default.conf:/etc/nginx/conf.d/default.conf
+        - ./certs:/certs
       networks:
         internal:
           aliases:
             - ngnix-app
       ports:
           - 80:80
+          - 443:443
       depends_on:
         flask:
           condition: service_healthy
@@ -40,7 +42,7 @@ services:
           aliases:
             - flask-app
       ports:
-          - 8080:5000
+          - 5000:5000
     postgres:
       restart: always
       image: postgres

@@ -1,6 +1,6 @@
 # Gathering & Analysing data from the Meraki Scanning API
 ## Introduction
-The objetive of this Repository is to ofer a easy way to recolect and analyse data from the Meraki scanning API using a Raspberry Pi
+The objetive of this Repository is to offer a easy way to recolect and analyse data from the Meraki scanning API using a Raspberry Pi
 
 ## Technologies used
 - Meraki AP
@@ -15,14 +15,28 @@ The objetive of this Repository is to ofer a easy way to recolect and analyse da
 - Raspberry Pi
 
 
-## Pre-requisits 
-- Access to a tenant of meraki Dashboard where there a APs up & running 
-- Raspberry Pi 4
-- Any way to expose the port 443 of the Rapsberry pi (this can be achived using the home router of any ISP)
-- Debian Based OS (Raspian is OK)
-- Docker
-- Docker-compose
+## Pre-requisites 
 
+- Raspberry Pi 
+- Debian Based OS installed in the Pi (Raspian is OK)
+- Docker  installed in the Pi
+- Docker-compose  installed in the Pi
+- Editing access to a Organization in the Meraki Dashboard with APs up & running 
+- Ports 80 & 443 of the Rapsberry Pi exposed to the internet 
+
+---
+![](https://img.shields.io/badge/WARNING-NOTE-yellow) 
+
+The port 80 is used to respond to challenges, used by the letsencrypt bot.
+this is only used during first request  and the renewal of the cert 
+
+---
+---
+![](https://img.shields.io/badge/WARNING-NOTE-yellow) 
+
+This can be achived using the home router of any ISP and/or a meraki MX
+
+---
 
 <details><summary><b>How to install Docker</b></summary>
 
@@ -55,7 +69,7 @@ Follow the steps the link below:
 **NOTE** The *URL* to be configured in the Dashboard must be rechable via Internet and must publish the port 443 of the Raspberry Pi 
 
 - - - 
- After enabling the scanning API make sure to copy the validator somewere safe. 
+After enabling the scanning API make sure to copy the validator somewere safe. 
 
 
 

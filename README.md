@@ -31,10 +31,10 @@ The port 80 is used to respond to challenges, used by the letsencrypt bot.
 this is only used during first request  and the renewal of the cert 
 
 ---
----
+
 ![](https://img.shields.io/badge/WARNING-NOTE-yellow) 
 
-This can be achived using the home router of any ISP and/or a meraki MX
+Exposing the ports in the Pi can be achived by using the home router of any ISP and/or a meraki MX
 
 ---
 

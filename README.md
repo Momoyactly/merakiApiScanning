@@ -1,4 +1,17 @@
 # Gathering & Analysing data from the Meraki Scanning API
+
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/uriarriaga/merakiApiScanning) 
+
+![](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+
+![](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
+
+![](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+
+![](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
+
+![](https://img.shields.io/badge/Grafana-F2F4F9?style=for-the-badge&logo=grafana&logoColor=orange&labelColor=F2F4F9)
+
 ## Introduction
 The objetive of this Repository is to offer a easy way to recolect and analyse data from the Meraki scanning API using a Raspberry Pi
 
@@ -25,14 +38,14 @@ The objetive of this Repository is to offer a easy way to recolect and analyse d
 - Ports 80 & 443 of the Rapsberry Pi exposed to the internet 
 
 ---
-![](https://img.shields.io/badge/WARNING-NOTE-yellow) 
+![](https://img.shields.io/badge/NOTE-yellow) 
 
 The port 80 is used to respond to challenges, used by the letsencrypt bot.
 this is only used during first request  and the renewal of the cert 
 
 ---
 
-![](https://img.shields.io/badge/WARNING-NOTE-yellow) 
+![](https://img.shields.io/badge/NOTE-yellow) 
 
 Exposing the ports in the Pi can be achived by using the home router of any ISP and/or a meraki MX
 
@@ -64,7 +77,7 @@ Follow the steps the link below:
 
 - - - 
 
-![](https://img.shields.io/badge/WARNING-NOTE-yellow) 
+![](https://img.shields.io/badge/NOTE-yellow) 
 
 **NOTE** The *URL* to be configured in the Dashboard must be rechable via Internet and must publish the port 443 of the Raspberry Pi 
 
@@ -97,7 +110,7 @@ POSTGRES_HOST=postgres-app
 ```
 - - -
 
-![](https://img.shields.io/badge/WARNING-NOTE-yellow)
+![](https://img.shields.io/badge/NOTE-yellow)
 
 **NOTE** All the values should be changed exept for the `POSTGRES_HOST` this value is linked to the alias of the postgres container in the `docker-compose.yml`
 

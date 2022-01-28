@@ -47,18 +47,28 @@ The objetive of this Repository is to ofer a easy way to recolect and analyse da
 Follow the steps the link below:
 
 [Enable scanning API](https://developer.cisco.com/meraki/scanning-api/#!enable-scanning-api) 
-<br>  After enabling the scanning API make sure to copy the validator somewere safe. 
 
-- First you need you need to clone this repo in the Raspberry Pi
+- - - 
+
+![](https://img.shields.io/badge/WARNING-NOTE-yellow) 
+
+**NOTE** The *URL* to be configured in the Dashboard must be rechable via Internet and must publish the port 443 of the Raspberry Pi 
+
+- - - 
+ After enabling the scanning API make sure to copy the validator somewere safe. 
+
+
+
+### Clone this repo in the Raspberry Pi & checkout to the branch **arm**
 ``` bash
 git clone https://github.com/uriarriaga/merakiApiScanning.git
 ```
-- Enter the local Repository and change to de **arm** Branch
+Enter the local Repository and change to the **arm** Branch
 ``` bash 
 cd merakiApiScanning/
 git checkout arm
 ```
-- Create the varibles.env file and set enviromental varibles for the containers 
+### Create the varibles.env file and set enviromental varibles for the containers 
 
 ``` bash
 sudo nano varibles.env
@@ -71,10 +81,17 @@ POSTGRES_PASSWORD=password # !!CHANGE ME!!
 POSTGRES_DB=database
 POSTGRES_HOST=postgres-app
 ```
-**NOTE** All the values should be changed exept for the `POSTGRES_HOST` this value is linked to the alias of the postgres container in the `docker-compose.yml`
-<br>Please Change the values as you please acording to your context.
+- - -
 
-- Generate the Certs to be used by nginx
+![](https://img.shields.io/badge/WARNING-NOTE-yellow)
+
+**NOTE** All the values should be changed exept for the `POSTGRES_HOST` this value is linked to the alias of the postgres container in the `docker-compose.yml`
+
+- - -
+
+Please Change the values as you please acording to your context.
+
+### Generate the Certs to be used by nginx
 
 <br>First you need to modifi the file `cerbot.sh` located in the directory `.../merakiScanningAPI`. The changes that you must make are in the last 2 lines(email & URL) 
 ```
@@ -82,15 +99,14 @@ sudo nano certbot.sh
 ```
 ```
 sudo docker run -it --rm -p 80:80 --name certbot \
-                -v ~/Dev/merakiApiScanning/certs/etc/letsencrypt:/etc/letsencrypt \
-                -v ~/Dev/merakiApiScanning/certs/var/lib/letsencrypt:/var/lib/letsencrypt  \
+                -v ./certs/etc/letsencrypt:/etc/letsencrypt \
+                -v ./certs/var/lib/letsencrypt:/var/lib/letsencrypt  \
                 certbot/certbot:arm32v6-nightly certonly  \
                 --standalone  --agree-tos --no-eff-email \
                 --email <email> \
                 -d <URL>
 ```
-- Update the `default.conf` used by Nginix
-the file si located in the directory 
+Update the `default.conf` used by Nginix. The file is located in the directory 
 `.../merakiScanningAPI/nginx/`
 
 ``` bash
@@ -122,7 +138,7 @@ server {
     }
 }
 ```
-- The Last  step is to start the containers
+### **LAST STEP** Start the containers
 ```
 docker-compose up -d
 ```

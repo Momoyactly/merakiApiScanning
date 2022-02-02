@@ -24,9 +24,9 @@ def post():
                 row[key] = value
             stmt = """INSERT INTO records (time, clientmac, ipv4, ssid, os, manufacturer, nearestApMac,nearestApRssi)
                     VALUES (:time, :clientmac, :ipv4, :ssid, :os, :manufacturer, :nearestApMac, :nearestApRssi)"""
-            conn.execute(text(stmt),[{"time":row["time"], "clientmac":row["clientMac"],"ipv4":row["ipv4"],
+            conn.execute(text(stmt),[{"time":" ".join(row["time"][:-1].split('T')), "clientmac":row["clientMac"],"ipv4":row["ipv4"],
                                     "ssid":row["ssid"],"os":row['os'],"manufacturer":row["manufacturer"],
-                                    "nearestApMac":row['nearestApMac'],"nearestApRssi":row['nearestApRssi']}]) 
+                                    "nearestApMac":row['nearestApMac'],"nearestApRssi":int(row['nearestApRssi'])}]) 
         conn.commit()
     return "a30ee592b51f2f382a1e9d2dd0baed8920e8d51a"
     

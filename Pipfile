@@ -16,8 +16,10 @@ MarkupSafe = "==2.0.1"
 urllib3 = "==1.26.8"
 Werkzeug = "==2.0.2"
 SQLAlchemy = "*"
+gunicorn = "==20.1.0"
+greenlet = "==1.1.2"
+sqlalchemy = "*"
 psycopg2 = "*"
-gunicorn = "*"
 
 [dev-packages]
 

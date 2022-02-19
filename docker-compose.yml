@@ -12,6 +12,7 @@ services:
             - ngnix-app
       ports:
         - 443:443
+        - 80:80
       depends_on:
         flask:
           condition: service_healthy
@@ -61,29 +62,34 @@ services:
         interval: 5s
         timeout: 5s
         retries: 5
-    certbot:
-      image: certbot/certbot:arm32v6-nightly
-      container_name: certbot
-      volumes:
-        - ~/Dev/merakiApiScanning/certs/etc/letsencrypt:/etc/letsencrypt 
-        - ~/Dev/merakiApiScanning/certs/var/lib/letsencrypt:/var/lib/letsencrypt
-      command: renew --dry-run --force-renewal
-      networks:
-        internal:
-          aliases:
-            - certbot-app
-      ports:
-        - 80:80
+#    certbot:
+#      image: certbot/certbot:arm32v6-nightly
+#      container_name: certbot
+#      volumes:
+#        - ~/Dev/merakiApiScanning/certs/etc/letsencrypt:/etc/letsencrypt 
+#        - ~/Dev/merakiApiScanning/certs/var/lib/letsencrypt:/var/lib/letsencrypt
+#      command: renew --dry-run --force-renewal
+#      networks:
+#        internal:
+#          aliases:
+#            - certbot-app
+#      ports:
+#        - 80:80
     grafana:
-      image: grafana/grafana-oss
+      image: "grafana/grafana"
       container_name: grafana
+      env_file:
+      - ./variables.env
+      volumes:
+        - ./grafana/grafana.ini:/etc/grafana/grafana.ini
       ports:
         - 3000:3000
-      user: '104'
+      user: '472'
       networks:
           internal:
             aliases:
               - grafana-app
+
 networks:
   internal:
     name: internal

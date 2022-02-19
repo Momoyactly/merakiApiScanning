@@ -17,7 +17,7 @@ def get():
 
 @app.route('/', methods=['POST'])
 def post():
-    engine = create_engine(f"postgresql+psycopg2://{user}:{password}@{host}/{db}", echo=True, future=True)
+    engine = create_engine(f"postgresql+psycopg2://{user}:{password}@{host}/{db}", future=True)
     with engine.connect() as conn:
         for row in request.get_json()['data']['observations']:
             for key,value in row['latestRecord'].items():
